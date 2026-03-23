@@ -1,0 +1,28 @@
+.jjk {
+  background-color: aqua;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+.color {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media only screen and (max-width: 992px) and (min-width: 600px) {
+  .jjk {
+    background-color: rgb(73, 149, 80);
+  }
+  .color {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 599px) {
+  .jjk {
+    background-color: red;
+  }
+  .color {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

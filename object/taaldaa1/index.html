@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div class="koko">
+      <input type="number" id="lolo" />
+      <input type="number" id="kino" />
+      <p id="hh"></p>
+      <button onclick="to()">*</button> <br />
+      <button onclick="plus()">+</button> <br />
+      <button onclick="minus()">-</button> <br />
+      <button onclick="lolo()">/</button>
+      <script>
+        let a = document.getElementById("lolo");
+        let c = document.getElementById("kino");
+        let v = document.getElementById("hh");
+        const to = () => {
+          v.innerHTML = parseInt(a.value) * parseInt(c.value);
+        };
+        const plus = () => {
+          v.innerHTML = parseInt(a.value) + parseInt(c.value);
+        };
+        const minus = () => {
+          v.innerHTML = parseInt(a.value) - parseInt(c.value);
+        };
+        const lolo = () => {
+          v.innerHTML = parseInt(a.value) / parseInt(c.value);
+        };
+      </script>
+    </div>
+  </body>
+</html>
